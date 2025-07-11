@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh's | TTS Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css"> 
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="header">
+            <h1>Speech Synthesizer</h1>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        
+        <div class="input-group">
+            <label for="textInput"><i class="fas fa-align-left"></i> Your Text</label>
+            <textarea id="textInput" placeholder=" Hello World!’— I’m Ganesh’s TTS bot! Type anything, and I’ll voice it! "></textarea>
+        </div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="rateInput"><i class="fas fa-tachometer-alt"></i> Speed</label>
+                <div class="slider-container">
+                    <span id="rateValue">1</span>
+                    <input type="range" id="rateInput" min="0.5" max="2" step="0.1" value="1">
+                </div>
+            </div>
+            
+            <div class="control-group">
+                <label for="volumeInput"><i class="fas fa-volume-up"></i> Volume</label>
+                <div class="slider-container">
+                    <span id="volumeValue">1</span>
+                    <input type="range" id="volumeInput" min="0" max="1" step="0.1" value="1">
+                </div>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <button id="speakBtn"><i class="fas fa-play"></i> Speak</button>
+            <button id="stopBtn"><i class="fas fa-stop"></i> Stop</button>
+        </div>
+        
+        <div id="status" class="status">Ready</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+   <script src="./index.js"></script>
+</body>
+</html> 
+
+
